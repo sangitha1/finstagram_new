@@ -1,0 +1,47 @@
+header {
+    background-color: #244751;
+    color: #E8FDFF;
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+body header {
+    position: fixed;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+main {
+    background-color: white;
+    padding: 26px;
+    font-family: 'PT Serif', serif;
+}
+
+.post {
+    margin-bottom: 48px;
+}
+
+.post .user-info img {
+    border-radius: 50%;
+}
+
+a.photo :visited {
+    color: #244751;
+}
+
+a.photo :hover {
+    outline: solid black;
+}
+
+header a {
+    color: #bfbeaf;
+}
+
+.menu li {
+     margin:0px;
+    list-style:none;
+}

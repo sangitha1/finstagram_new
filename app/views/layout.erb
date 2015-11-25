@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- these links help to format the site with CSS-->
+        <link rel="stylesheet" href="/stylesheets/normalize.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300">
+        <link rel="stylesheet" href="/stylesheets/lib.css">
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+       <title>Finstagram</title>
+    </head>
+    <body>
+        <header>
+            <a href='/'><h1>Finstagram</h1></a>
+        <div class="login-info">
+                <% if current_user %>
+                    <%= current_user.username %>
+                    <a href="/logout">Logout</a>
+                <% else %>
+                    <a href="/login">Login</a>
+                    <a href="/signup">Signup</a>
+                <% end %>
+            </div>
+        </header>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <main role="main">
+                <%= yield %>
+            </main>
+      
+    </body>
+</html>
